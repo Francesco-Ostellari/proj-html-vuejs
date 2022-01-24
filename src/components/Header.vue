@@ -2,7 +2,7 @@
   <div class="header-container">
     <div class="header">
       <div class="container">
-        <div class="row pt-2 pb-2">
+        <div class="row pt-3 pb-3">
           <div class="col d-flex justify-content-between">
             <div class="left">
               <span>
@@ -34,46 +34,72 @@
       </div>
     </div>
     <div class="jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col pt-3 d-flex justify-content-between">
-            <div class="jumbo-left">
-              <span class="next">
-                nex
-              </span>
-              <span>
-                gen
-              </span> 
+      <div class="bg-opacity">
+          <div class="container">
+            <div class="row">
+              <div class="col pt-4 d-flex justify-content-between">
+                <div class="jumbo-left">
+                  <span class="next">
+                    n e x
+                  </span>
+                  <span class="gen">
+                    g e n
+                  </span> 
+                </div>
+                <div class="jumbo-right">
+                  <ul>
+                    <li>
+                      <a href="#">home</a>
+                    </li>
+                    <li>
+                      <a href="#">about</a>
+                    </li>
+                    <li>
+                      <a href="#">projects</a>
+                    </li>
+                    <li>
+                      <a href="#">process</a>
+                    </li>
+                    <li>
+                      <a href="#">testimonials</a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="far fa-user"></i> </a>
+                    </li>
+                    <li class="btn">
+                      <button type="button" class="btn">get in touch</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="jumbo-right">
-              <ul>
-                <li>
-                  <a href="#">home</a>
-                </li>
-                <li>
-                  <a href="#">about</a>
-                </li>
-                <li>
-                  <a href="#">projects</a>
-                </li>
-                <li>
-                  <a href="#">process</a>
-                </li>
-                <li>
-                  <a href="#">testimonials</a>
-                </li>
-                <li>
-                  <a href="#"> <i class="far fa-user"></i> </a>
-                </li>
-                <li class="btn">
+          </div>
+          <div class="jumbo-text">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <span class="subtitle">
+                    human resources
+                  </span>
+                  <h1 class="title-bg">
+                    Get More
+                  </h1>
+                  <div class="container-bg mb-4">
+                    <div class="bg-h1">
+                    </div>
+                    <div class="container-title">
+                      <h1 class="title-bg">Productivity</h1>
+                    </div>
+                  </div>
+                  <p class="mb-4">Planning, recruitment and selection process and performance evaluation of employees.</p>
                   <button type="button" class="btn">get in touch</button>
-                </li>
-              </ul>
+                  <button type="button" class="btn read ms-2">read more</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </div>
 </template>
 
@@ -97,50 +123,112 @@ export default {
     }
   }
   .jumbotron {
-    .container {
-      .row {
-        .col {
-          .jumbo-left {
-            span {
-              text-transform: uppercase;
+    background-image: url('../assets/img/bg-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .bg-opacity {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      .container {
+        .row {
+          .col {
+            .jumbo-left {
+              span {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.3em;
+              }
+              .next {
+                color: #00A6A6;
+                background-color: #1D3B3A;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                padding: 10px 0 10px 30px;
+                margin-right: 2px;
+              }
+              .gen {
+                color: #babdbe;
+              }
+            }
+            .jumbo-right {
+              ul {
+                list-style: none;
+                li {
+                  display: inline;
+                  margin-right: 30px;
+                  a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-weight: 600;
+                    color: white;
+                  }
+                  button {
+                    text-transform: uppercase;
+                    padding: 8px 30px;
+                    background-color: #1a948f;
+                    color: #ffffff;
+                  }
+                }
+                li:hover a {
+                  color: #1a948f;
+                }
+                .btn {
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .jumbo-text {
+        padding: 90px 0 630px 0;
+        .subtitle {
+          text-transform: uppercase;
+          color: #1a948f;
+          font-weight: 700;
+          font-size: 1.3em; 
+        }
+        .title-bg {
+          font-size: 3.7em;
+          font-weight: bold;
+          color: #ffffff;
+        }
+        .container-bg {
+          position: relative;
+          height: 65px;
+          width: 345px;
+          .bg-h1 {
+            background-color: #1a948f;
+            height: 30px;
+            width: 345px;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+          }
+          .container-title {
+            .title-bg {
+              font-size: 3.7em;
               font-weight: bold;
-              font-size: 1.3em;
-            }
-            .next {
-              color: #00A6A6;
-              background-color: #6c9b9c;
-              border-top-left-radius: 25px;
-              border-bottom-left-radius: 25px;
-              padding: 5px 0 5px 20px;
+              color: #ffffff;
+              z-index: 2;
             }
           }
-          .jumbo-right {
-            ul {
-              list-style: none;
-              li {
-                display: inline;
-                margin-right: 30px;
-                a {
-                  text-transform: uppercase;
-                  text-decoration: none;
-                  font-weight: 600;
-                  color: black;
-                }
-                button {
-                  text-transform: uppercase;
-                  padding: 8px 30px;
-                  background-color: #1a948f;
-                  color: #ffffff;
-                }
-              }
-              li:hover a {
-                color: #1a948f;
-              }
-              .btn {
-                margin-right: 0;
-              }
-            }
-          }
+        }
+        p {
+          font-size: 1.5em;
+          color: #babdbe;
+        }
+        button {
+          text-transform: uppercase;
+          padding: 8px 30px;
+          background-color: #1a948f;
+          color: #ffffff;
+        }
+        .read {
+          background-color: transparent;
+          color: white;
+          border: 1px solid #1a948f;
         }
       }
     }
