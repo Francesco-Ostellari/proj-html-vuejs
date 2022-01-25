@@ -194,6 +194,47 @@
         </div>
       </div>
     </section>
+    <section class="fourth-section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="subtitle">
+              how it works in practice
+            </div>
+            <div class="title">
+              <span class="bg-title">
+                  Process
+                </span>
+                <span class="color-title">
+                  Managment
+                </span>
+            </div>
+            <p>
+              We work with innovative methodologies to ensure that the entire reformatting process is done from start to finish as planned.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="line">
+        <div class="container-round">
+          <div class="round one">
+            01
+          </div>
+          <div class="round two">
+            02
+          </div>
+          <div class="round three">
+            03
+          </div>
+          <div class="round four">
+            04
+          </div>
+          <div class="round five">
+            05
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -374,6 +415,64 @@ export default {
           font-size: 1.8em;
           padding: 260px 10px 0 10px;
           font-weight: bold;
+        }
+      }
+    }
+  }
+  .fourth-section {
+    text-align: center;
+    padding: 100px 0;
+    .subtitle {
+      text-transform: uppercase;
+      color: #1a948f;
+      font-weight: 700;
+      font-size: 1.3em; 
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .title {
+      .bg-title {
+        color: #1a948f;
+        background-color: #DAECED;
+        border-radius: 5px;
+        padding: 0 15px;
+        display: inline-block;
+        font-size: 2.5em;
+        font-weight: bold;
+      }
+      .color-title {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #24343c;
+      }
+    }
+    p {
+      color: #797D83;
+      margin: 20px auto;
+      font-size: 1.2em;
+      width: 800px;
+    }
+    .line {
+      width: 100%;
+      height: 5px;
+      background-color:#DAECED;
+      position: relative;
+      .container-round {
+        margin: 0 20%;
+        height: 50px;
+        .round {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #DAECED;
+          position: absolute;
+          transform: translate(0, -50%);
+          color: #1a948f;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          font-size: 1.2em;
         }
       }
     }
