@@ -206,7 +206,7 @@
                   Process
                 </span>
                 <span class="color-title">
-                  Managment
+                  Management
                 </span>
             </div>
             <p>
@@ -215,22 +215,81 @@
           </div>
         </div>
       </div>
-      <div class="line">
-        <div class="container-round">
-          <div class="round one">
-            01
-          </div>
-          <div class="round two">
-            02
-          </div>
-          <div class="round three">
-            03
-          </div>
-          <div class="round four">
-            04
-          </div>
-          <div class="round five">
-            05
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="container-line w-100">
+              <div class="line w-100"></div>
+              <div class="container-round w-100">
+                <div class="round">
+                  01
+                </div>
+                <div class="round">
+                  02
+                </div>
+                <div class="round">
+                  03
+                </div>
+                <div class="round">
+                  04
+                </div>
+                <div class="round">
+                  05
+                </div>
+              </div>
+            </div>
+            <div class="container-text-flex">
+              <div class="container-text-management d-flex flex-column justify-content-center">
+                <div class="title-management">
+                  <h3>
+                    Collection of information
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consecteur.
+                  </p>
+                </div>
+              </div>
+              <div class="container-text-management margin d-flex flex-column justify-content-center">
+                <div class="title-management">
+                  <h3>
+                    Strategic planning
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consecteur.
+                  </p>
+                </div>
+              </div>
+              <div class="container-text-management margin d-flex flex-column justify-content-center">
+                <div class="title-management">
+                  <h3>
+                    Assignment of responsibilities
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consecteur.
+                  </p>
+                </div>
+              </div>
+              <div class="container-text-management margin d-flex flex-column justify-content-center">
+                <div class="title-management">
+                  <h3>
+                    Formatting process
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consecteur.
+                  </p>  
+                </div> 
+              </div>
+              <div class="container-text-management margin d-flex flex-column justify-content-center">
+                <div class="title-management">
+                  <h3>
+                    Continuity formalization
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consecteur.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -452,28 +511,50 @@ export default {
       font-size: 1.2em;
       width: 800px;
     }
-    .line {
-      width: 100%;
-      height: 5px;
-      background-color:#DAECED;
+    .container-line {
+      height: 100px;
+      display: flex;
+      align-items: center;
       position: relative;
+      .line {
+        height: 5px;
+        background-color:#DAECED;
+      }
       .container-round {
-        margin: 0 20%;
-        height: 50px;
+        position: absolute;
+        display: flex;
         .round {
           width: 50px;
           height: 50px;
           border-radius: 50%;
           background-color: #DAECED;
-          position: absolute;
-          transform: translate(0, -50%);
-          color: #1a948f;
+          margin-left: calc(100% / 6 - 50px);
+          font-weight: bold;
+          font-size: 1.2em;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-weight: bold;
-          font-size: 1.2em;
+          color: #1a948f;
         }
+      }
+    }
+    .container-text-flex {
+      display: flex;
+      align-items: center;
+      width: 80%;
+      margin: 0 240px;
+      .container-text-management {
+        width: 300px;
+        .title-management{
+          width: 100%;
+          height: 100%;
+          p {
+            width: 300px;
+          }
+        }
+      }
+      .margin {
+        margin-left: 125px;
       }
     }
   }
