@@ -24,7 +24,7 @@
             <div class="mybox px-5 me-4 ms-4">
               <div class="text">
                 <div class="icons">
-                  <span>
+                  <span class="chart-pie">
                     <i class="fas fa-chart-pie"></i>
                   </span>
                 </div>
@@ -41,7 +41,7 @@
             <div class="mybox px-5">
               <div class="text">
                 <div class="icons">
-                  <span>
+                  <span class="tachometer">
                     <i class="fas fa-tachometer-alt"></i>
                   </span>
                 </div>
@@ -60,60 +60,135 @@
       </div>
     </section>
     <section class="second-section">
-      <div class="container-fluid">
+      <div class="container text-second-section">
         <div class="row">
-          <div class="col-6">
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <div class="text">
-                    <span class="subtitle">
-                      about the network
-                    </span>
-                    <div class="title">
-                      <span class="bg-title">
-                        The
-                      </span>
-                      <span class="color-title">
-                        Company
-                      </span>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cras iaculis diam varius diam ultreicies lacinia.
-                    </p>
-                    <div class="container-box d-flex">
-                      <div class="box-company">
-                        <h1 class="ms-3">
-                          0
-                        </h1>
-                        <div class="title">Employees</div>
-                        <div>Lorem ipsum dolor sit amet</div>
-                      </div>
-                      <div class="box-company me-3 ms-5">
-                        <h1 class="ms-3">
-                          0
-                        </h1>
-                        <div class="title">Partners</div>
-                        <div>Lorem ipsum dolor sit amet</div>
-                      </div>
-                      <div class="box-company">
-                        <h1 class="ms-3">
-                          0
-                        </h1>
-                        <div class="title">Customers</div>
-                        <div>Lorem ipsum dolor sit amet</div>
-                      </div>
-                    </div>
-                    <button type="button" class="btn">get in touch</button>
-                    <button type="button" class="btn read ms-2">read more</button>
+          <div class="col-5">
+            <div class="text">
+              <span class="subtitle">
+                about the network
+              </span>
+              <div class="title">
+                <span class="bg-title">
+                  The
+                </span>
+                <span class="color-title">
+                  Company
+                </span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cras iaculis diam varius diam ultreicies lacinia.
+              </p>
+              <div class="container-box d-flex">
+                <div class="box-company">
+                  <h1 class="ms-3">
+                    0
+                  </h1>
+                  <div class="title">Employees</div>
+                  <div>Lorem ipsum dolor sit amet</div>
+                </div>
+                <div class="box-company me-3 ms-5">
+                  <h1 class="ms-3">
+                    0
+                  </h1>
+                  <div class="title">Partners</div>
+                  <div>Lorem ipsum dolor sit amet</div>
+                </div>
+                <div class="box-company">
+                  <h1 class="ms-3">
+                    0
+                  </h1>
+                  <div class="title">Customers</div>
+                  <div>Lorem ipsum dolor sit amet</div>
+                </div>
+              </div>
+              <button type="button" class="btn">get in touch</button>
+              <button type="button" class="btn read ms-2">read more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="third-section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="subtitle">
+              we do more for everyone
+            </div>
+            <div class="title">
+              <span>
+                Actions &amp;
+              </span>
+              <span class="bg-green">
+                Projects
+              </span>
+            </div>
+            <ul>
+              <li>
+                <a href="#">all</a>
+              </li>
+              <li>
+                <a href="#">institutional</a>
+              </li>
+              <li>
+                <a href="#">social</a>
+              </li>
+              <li>
+                <a href="#">events</a>
+              </li>
+              <li>
+                <a href="#">innovation</a>
+              </li>
+              <li>
+                <a href="#">environment</a>
+              </li>
+              <li>
+                <a href="#">techonology</a>
+              </li>
+            </ul>
+            <div class="container-box d-flex flex-wrap justify-content-center">
+              <div class="box-project mt-4 mb-4">
+                <div class="bg-trasparenza">
+                  <div class="name-project">
+                    Academic professional program in social media
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="img">
-              
+              <div class="box-project mt-4 me-4 ms-4 mb-4">
+                <div class="bg-trasparenza">
+                  <div class="name-project">
+                    President's speech at the annual meeting
+                  </div>
+                </div>
+              </div>
+              <div class="box-project mt-4 mb-4">
+                <div class="bg-trasparenza">
+                  <div class="name-project">
+                    International business trip in Shanghai
+                  </div>
+                </div>
+              </div>
+              <div class="box-project">
+                <div class="bg-trasparenza">
+                  <div class="name-project">
+                    Technology workshop with education theme
+                  </div>
+                </div>
+              </div>
+              <div class="box-project me-4 ms-4">
+                <div class="bg-trasparenza">
+                  <div class="name-project">
+                    Donation of clothes and food to the partner NGO
+                  </div>
+                </div>
+              </div>
+              <div class="box-project">
+                <div class="bg-trasparenza">
+                  <div class="name-project">
+                    Confraternization of the procurement team
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -148,8 +223,14 @@ export default {
           span {
             color: #1a948f;
             display: inline-block;
-            transform: translate(30%, 20%);
+            transform: translate(33%, 18%);
             font-size: 1.5em;
+          }
+          .chart-pie {
+            transform: translate(50%, 19%);
+          }
+          .tachometer {
+            transform: translate(41%, 17%);
           }
         }
         .container-text-first-section {
@@ -168,7 +249,12 @@ export default {
       }
     }
   }
-  .second-section {
+  .second-section{
+    background-image: url('../assets/img/about-5.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    .text-second-section {
+    }
     .text {
       padding: 100px 0;
       .subtitle {
@@ -198,6 +284,7 @@ export default {
       p {
         color: #797D83;
         margin: 20px 0;
+        font-size: 1.2em;
       }
       .container-box {
         margin: 40px 0;
@@ -230,9 +317,65 @@ export default {
         border: 1px solid #1a948f;
       }
     }
-    .img {
-      background-image: url('../assets/img/about-5.jpg');
-      background-size: cover;
+  }
+  .third-section {
+    background-color: #111117;
+    text-align: center;
+    padding: 150px 0;
+    .subtitle {
+      text-transform: uppercase;
+      color: #1a948f;
+      font-weight: 700;
+      font-size: 1.3em; 
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 30px;
+      .bg-green {
+        background-color: #0E272D;
+        padding: 0 10px;
+      }
+    }
+    ul {
+      list-style-type: none;
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        padding: 5px;
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #797D83;
+          font-weight: 600;
+        }
+      }
+      li:hover {
+        background-color: #0E272D;
+        padding: 5px;
+      } 
+    }
+    .box-project {
+      background-image: url('../assets/img/project-1.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 400px;
+      height: 400px;
+      border-radius: 5px;
+      .bg-trasparenza {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        .name-project {
+          color: #ffffff;
+          font-size: 1.8em;
+          padding: 260px 10px 0 10px;
+          font-weight: bold;
+        }
+      }
     }
   }
 </style>
