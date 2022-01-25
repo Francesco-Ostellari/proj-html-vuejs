@@ -193,6 +193,8 @@ export default {
           font-size: 3.7em;
           font-weight: bold;
           color: #ffffff;
+          position: relative;
+          z-index: 999;
         }
         .container-bg {
           position: relative;
@@ -204,14 +206,12 @@ export default {
             width: 345px;
             position: absolute;
             bottom: 0;
-            z-index: 1;
           }
           .container-title {
             .title-bg {
               font-size: 3.7em;
               font-weight: bold;
               color: #ffffff;
-              z-index: 2;
             }
           }
         }
