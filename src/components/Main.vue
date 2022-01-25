@@ -294,6 +294,73 @@
         </div>
       </div>
     </section>
+    <section class="fifth-section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="subtitle">
+              customer testimonials
+            </div>
+            <div class="title">
+              <span class="color-title">
+                Trusted
+              </span>
+              <span class="bg-title">
+                Feedback
+              </span>
+            </div>
+            <p>
+              We work intensively in search of ideals that can ad up in the lives of our customers. This is what moves us and we are grateful for the recognition.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <div class="mybox px-5">
+              <div class="text">
+                <img src="../assets/img/logo-1.png" alt="">
+                <div class="container-text-first-section">
+                  <p class="paragraph">
+                    Praesent volutpat justo sit amet elementum malesuada. Praesent saggit augue justo, in accumsan orci rhoncus at pellentesque. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="quote">
+                <i class="fas fa-quote-right"></i>
+              </div>
+            </div>
+            <div class="mybox px-5 me-4 ms-4">
+              <div class="text">
+                <img src="../assets/img/logo-2.png" alt="">
+                <div class="container-text-first-section">
+                  <p class="paragraph">
+                    Praesent volutpat justo sit amet elementum malesuada. Praesent saggit augue justo, in accumsan orci rhoncus at pellentesque. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="quote">
+                <i class="fas fa-quote-right"></i>
+              </div>
+            </div>
+            <div class="mybox px-5">
+              <div class="text">
+                <img src="../assets/img/logo-3.png" alt="">
+                <div class="container-text-first-section">
+                  <p class="paragraph">
+                    Praesent volutpat justo sit amet elementum malesuada. Praesent saggit augue justo, in accumsan orci rhoncus at pellentesque. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="quote">
+                <i class="fas fa-quote-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -555,6 +622,66 @@ export default {
       }
       .margin {
         margin-left: 125px;
+      }
+    }
+  }
+  .fifth-section {
+    background-color: #e4eae6;
+    padding: 100px 0;
+    text-align: center;
+    .subtitle {
+      text-transform: uppercase;
+      color: #1a948f;
+      font-weight: 700;
+      font-size: 1.3em; 
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .title {
+      .bg-title {
+        color: #1a948f;
+        background-color: #CCE3DE;
+        border-radius: 5px;
+        padding: 0 15px;
+        display: inline-block;
+        font-size: 2.5em;
+        font-weight: bold;
+      }
+      .color-title {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #24343c;
+      }
+    }
+    p {
+      color: #797D83;
+      margin: 20px auto;
+      font-size: 1.2em;
+      width: 800px;
+    }
+    .mybox {
+      height: 350px;
+      width: 400px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      margin-top: 30px;
+      position: relative;
+      .text {
+        padding: 50px 0;
+        text-align: start;
+        .img {
+          width: 100%;
+        }
+        .paragraph {
+          width: 100%;
+        }
+      }
+      .quote {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        font-size: 1.5em;
+        color: #babdbe;
       }
     }
   }
