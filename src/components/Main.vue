@@ -386,18 +386,14 @@ export default {
           height: 50px;
           border-radius: 50%;
           background-color: #DAECED;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           margin-bottom: 15px;
           span {
             color: #1a948f;
             display: inline-block;
-            transform: translate(33%, 18%);
             font-size: 1.5em;
-          }
-          .chart-pie {
-            transform: translate(50%, 19%);
-          }
-          .tachometer {
-            transform: translate(41%, 17%);
           }
         }
         .container-text-first-section {
