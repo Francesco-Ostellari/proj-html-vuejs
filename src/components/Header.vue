@@ -86,12 +86,6 @@
 </template>
 
 <script>
-// <a href="#">home</a>
-// <a href="#">about</a>
-// <a href="#">projects</a>
-// <a href="#">process</a>
-// <a href="#">testimonials</a>
-// <a href="#"> <i class="far fa-user"></i> </a>
 export default {
   name: 'Header',
   data() {
