@@ -47,29 +47,11 @@
                   </span> 
                 </div>
                 <div class="jumbo-right">
-                  <ul>
-                    <li>
-                      <a href="#">home</a>
-                    </li>
-                    <li>
-                      <a href="#">about</a>
-                    </li>
-                    <li>
-                      <a href="#">projects</a>
-                    </li>
-                    <li>
-                      <a href="#">process</a>
-                    </li>
-                    <li>
-                      <a href="#">testimonials</a>
-                    </li>
-                    <li>
-                      <a href="#"> <i class="far fa-user"></i> </a>
-                    </li>
-                    <li class="btn">
-                      <button type="button" class="btn">get in touch</button>
-                    </li>
-                  </ul>
+                  <div>
+                    <a v-for="(link, index) in links" :key="index" :href="link.href">{{link.namelink}}</a>
+                    <a href="#"> <i class="far fa-user"></i> </a>
+                    <button type="button" class="btn">get in touch</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -104,8 +86,40 @@
 </template>
 
 <script>
+// <a href="#">home</a>
+// <a href="#">about</a>
+// <a href="#">projects</a>
+// <a href="#">process</a>
+// <a href="#">testimonials</a>
+// <a href="#"> <i class="far fa-user"></i> </a>
 export default {
-
+  name: 'Header',
+  data() {
+    return {
+      links: [
+        {
+          namelink: 'home',
+          href: '#'
+        },
+        {
+          namelink: 'about',
+          href: '#'
+        },
+        {
+          namelink: 'projects',
+          href: '#'
+        },
+        {
+          namelink: 'process',
+          href: '#'
+        },
+        {
+          namelink: 'testimonials',
+          href: '#'
+        },
+      ]
+    }
+  }
 }
 </script>
 
@@ -152,84 +166,78 @@ export default {
               }
             }
             .jumbo-right {
-              ul {
-                list-style: none;
-                li {
-                  display: inline;
-                  margin-right: 30px;
-                  a {
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    font-weight: 600;
-                    color: white;
-                  }
-                  button {
-                    text-transform: uppercase;
-                    padding: 8px 30px;
-                    background-color: #1a948f;
-                    color: #ffffff;
-                  }
-                }
-                li:hover a {
-                  color: #1a948f;
-                }
-                .btn {
-                  margin-right: 0;
-                }
+              a {
+                margin-right: 30px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 600;
+                color: white;
+              }
+              button {
+                text-transform: uppercase;
+                padding: 8px 30px;
+                background-color: #1a948f;
+                color: #ffffff;
+              }
+              a:hover {
+                color: #1a948f;
+              }
+              .btn {
+                margin-right: 0;
               }
             }
           }
         }
       }
-      .jumbo-text {
-        padding: 90px 0 630px 0;
-        .subtitle {
-          text-transform: uppercase;
-          color: #1a948f;
-          font-weight: 700;
-          font-size: 1.3em; 
-        }
-        .title-bg {
-          font-size: 3.7em;
-          font-weight: bold;
-          color: #ffffff;
-          position: relative;
-          z-index: 999;
-        }
-        .container-bg {
-          position: relative;
-          height: 65px;
-          width: 345px;
-          .bg-h1 {
-            background-color: #1a948f;
-            height: 30px;
-            width: 345px;
-            position: absolute;
-            bottom: 0;
-          }
-          .container-title {
-            .title-bg {
-              font-size: 3.7em;
-              font-weight: bold;
-              color: #ffffff;
-            }
-          }
-        }
-        p {
-          font-size: 1.5em;
-          color: #babdbe;
-        }
-        button {
-          text-transform: uppercase;
-          padding: 8px 30px;
+    }
+    .jumbo-text {
+      padding: 90px 0 630px 0;
+      .subtitle {
+        text-transform: uppercase;
+        color: #1a948f;
+        font-weight: 700;
+        font-size: 1.3em; 
+      }
+      .title-bg {
+        font-size: 3.7em;
+        font-weight: bold;
+        color: #ffffff;
+        position: relative;
+        z-index: 999;
+      }
+      .container-bg {
+        position: relative;
+        height: 65px;
+        width: 345px;
+        .bg-h1 {
           background-color: #1a948f;
-          color: #ffffff;
+          height: 30px;
+          width: 345px;
+          position: absolute;
+          bottom: 0;
         }
-        .read {
-          background-color: transparent;
-          color: white;
-          border: 1px solid #1a948f;
+        .container-title {
+          .title-bg {
+            font-size: 3.7em;
+            font-weight: bold;
+            color: #ffffff;
+          }
         }
+      }
+      p {
+        font-size: 1.5em;
+        color: #babdbe;
+      }
+      button {
+        text-transform: uppercase;
+        padding: 8px 30px;
+        background-color: #1a948f;
+        color: #ffffff;
+      }
+      .read {
+        background-color: transparent;
+        color: white;
+        border: 1px solid #1a948f;
       }
     }
   }
