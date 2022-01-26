@@ -16,6 +16,7 @@ export default {
 </script>
 
 <style lang ="scss" scoped>
+
   .box-project {
     background-size: contain;
     background-repeat: no-repeat;

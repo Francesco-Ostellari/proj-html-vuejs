@@ -118,6 +118,7 @@ export default {
 </script>
 
 <style lang="scss">
+// @import "../assets/scss/style.scss";
   .header {
     background-color: #24343c;
     .container {
@@ -125,6 +126,14 @@ export default {
         .col {
           span {
             color: #babdbe;
+          }
+          .left:hover span {
+            color: #1a948f;
+            cursor: pointer;
+          }
+          span:hover {
+            color: #1a948f;
+            cursor: pointer;
           }
         }
       }
@@ -185,7 +194,7 @@ export default {
       }
     }
     .jumbo-text {
-      padding: 90px 0 630px 0;
+      padding: 170px 0 630px 0;
       .subtitle {
         text-transform: uppercase;
         color: #1a948f;
