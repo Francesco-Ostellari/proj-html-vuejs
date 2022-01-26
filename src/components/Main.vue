@@ -1,5 +1,6 @@
 <template>
   <main>
+    <!-- section core business -->
     <section class="core-business">
       <div class="container">
         <div class="row">
@@ -137,6 +138,9 @@
         </div>
       </div>
     </section>
+    <!-- /section core business -->
+
+    <!-- section the-company -->
     <section class="the-company">
       <div class="container text-the-company">
         <div class="row">
@@ -264,6 +268,9 @@
         </div>
       </div>
     </section>
+    <!-- /section the company -->
+
+    <!-- section actions-projects -->
     <section class="actions-projects">
       <div class="container">
         <div class="row">
@@ -303,17 +310,22 @@
               </li>
             </ul>
             <div class="container-box d-flex flex-wrap justify-content-center">
+              <!-- add component box -->
               <Box
                 v-for="(box, index) in boxes"
                 :key="index"
                 :img="box.box"
                 :titolo="box.name"
               />
+              <!-- /add component box -->
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- /section actions-project -->
+
+    <!-- section process management -->
     <section class="process-management">
       <div class="container">
         <div class="row">
@@ -414,6 +426,9 @@
         </div>
       </div>
     </section>
+    <!-- /section project-management -->
+
+    <!-- section trusted-feedback -->
     <section class="trusted-feedback">
       <div class="container">
         <div class="row">
@@ -481,18 +496,22 @@
         </div>
       </div>
     </section>
+    <!-- /section trusted-feedback -->
   </main>
 </template>
 
 <script>
+// import component
 import Box from './Box.vue'
 export default {
   name: 'Main',
   components: {
     Box,
   },
+// /import component
   data() {
     return {
+      // array for box component
       boxes: [
         {
           box: require('../assets/img/project-1.jpg'),
@@ -519,6 +538,7 @@ export default {
           name: "Confraternization of the procurement team",
         },   
       ]
+      // /array for box component
     }
   }
 }
@@ -526,6 +546,8 @@ export default {
 
 <style lang="scss" scoped>
 // @import "../assets/scss/style.scss";
+
+// layout core-business
   .core-business {
     background-color: #e4eae6;
     padding: 150px 0;
@@ -586,6 +608,9 @@ export default {
       }
     }
   }
+// /layout core-business
+
+// layout the-company
   .the-company{
     background-image: url('../assets/img/about-5.jpg');
     background-repeat: no-repeat;
@@ -674,6 +699,9 @@ export default {
       }
     }
   }
+// /layout the-company
+
+// layout actions-projects
   .actions-projects {
     background-color: #111117;
     text-align: center;
@@ -715,6 +743,9 @@ export default {
       } 
     }
   }
+// /layout actions-projects
+
+// layout process-management
   .process-management {
     text-align: center;
     padding: 100px 0;
@@ -795,6 +826,9 @@ export default {
       }
     }
   }
+// /layout process-management
+
+// layout trusted-feedback
   .trusted-feedback {
     background-color: #e4eae6;
     padding: 100px 0;
@@ -855,4 +889,5 @@ export default {
       }
     }
   }
+// /layout trusted-feedback
 </style>

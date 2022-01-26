@@ -1,4 +1,5 @@
 <template>
+  <!-- header -->
   <div class="header-container">
     <div class="header">
       <div class="container">
@@ -33,55 +34,61 @@
         </div>
       </div>
     </div>
+    <!-- /header -->
+
+    <!-- jumbotron -->
     <div class="jumbotron">
       <div class="bg-opacity">
-          <div class="container">
-            <div class="row">
-              <div class="col pt-4 d-flex justify-content-between">
-                <div class="jumbo-left">
-                  <span class="next">
-                    n e x
-                  </span>
-                  <span class="gen">
-                    g e n
-                  </span> 
-                </div>
-                <div class="jumbo-right">
-                  <div>
-                    <a v-for="(link, index) in links" :key="index" :href="link.href">{{link.namelink}}</a>
-                    <a href="#"> <i class="far fa-user"></i> </a>
-                    <button type="button" class="btn">get in touch</button>
-                  </div>
-                </div>
+        <div class="container">
+          <div class="row">
+            <div class="col pt-4 d-flex justify-content-between">
+              <div class="jumbo-left">
+                <span class="next">
+                  n e x
+                </span>
+                <span class="gen">
+                  g e n
+                </span> 
               </div>
-            </div>
-          </div>
-          <div class="jumbo-text">
-            <div class="container">
-              <div class="row">
-                <div class="col-6">
-                  <span class="subtitle">
-                    human resources
-                  </span>
-                  <h1 class="title-bg">
-                    Get More
-                  </h1>
-                  <div class="container-bg mb-4">
-                    <div class="bg-h1">
-                    </div>
-                    <div class="container-title">
-                      <h1 class="title-bg">Productivity</h1>
-                    </div>
-                  </div>
-                  <p class="mb-4">Planning, recruitment and selection process and performance evaluation of employees.</p>
+              <div class="jumbo-right">
+                <div>
+                  <!-- v-for navbar -->
+                  <a v-for="(link, index) in links" :key="index" :href="link.href">{{link.namelink}}</a>
+                  <a href="#"> <i class="far fa-user"></i> </a>
                   <button type="button" class="btn">get in touch</button>
-                  <button type="button" class="btn read ms-2">read more</button>
+                  <!-- /v-for navbar -->
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="jumbo-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <span class="subtitle">
+                  human resources
+                </span>
+                <h1 class="title-bg">
+                  Get More
+                </h1>
+                <div class="container-bg mb-4">
+                  <div class="bg-h1">
+                  </div>
+                  <div class="container-title">
+                    <h1 class="title-bg">Productivity</h1>
+                  </div>
+                </div>
+                <p class="mb-4">Planning, recruitment and selection process and performance evaluation of employees.</p>
+                <button type="button" class="btn">get in touch</button>
+                <button type="button" class="btn read ms-2">read more</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    <!-- /jumbotron -->
   </div>
 </template>
 
@@ -119,6 +126,8 @@ export default {
 
 <style lang="scss">
 // @import "../assets/scss/style.scss";
+
+// layout header
   .header {
     background-color: #24343c;
     .container {
@@ -139,6 +148,9 @@ export default {
       }
     }
   }
+// /layout header
+
+// layout jumbotron
   .jumbotron {
     background-image: url('../assets/img/bg-4.jpg');
     background-repeat: no-repeat;
@@ -244,4 +256,5 @@ export default {
       }
     }
   }
+// /layout jumbotron
 </style>

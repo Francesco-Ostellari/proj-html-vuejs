@@ -134,7 +134,10 @@ export default {
 
 <style lang="scss" scoped>
 /* @import "../assets/scss/style.scss"; */
+
+// layout footer
   footer {
+    // layout footer-top
     .footer-top {
       background-color: #111117;
       padding: 100px 0 ;
@@ -223,6 +226,9 @@ export default {
         border: 1px solid #1a948f;
       }
     }
+    // /layout footer-top
+
+    // layout footer-bottom
     .footer-bottom {
       background-color: #16161C;
       color: #777777;
@@ -239,5 +245,7 @@ export default {
         color: #1a948f;
       }
     }
+    // /layout footer-bottom
   }
+// /layout footer
 </style>

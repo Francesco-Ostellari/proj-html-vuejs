@@ -1,4 +1,5 @@
 <template>
+  <!-- box -->
   <div class="box-project mt-4 mb-4 me-4" :style='{backgroundImage: "url(" + img + ")", }'>
     <div class="bg-trasparenza">
       <div class="name-project">
@@ -6,17 +7,18 @@
       </div>
     </div>
   </div>
+  <!-- /box -->
 </template>
 
 <script>
 export default {
   name: "Box",
-  props: ['titolo', 'img'],
+  props: ['titolo', 'img'], //props
 }
 </script>
 
 <style lang ="scss" scoped>
-
+/* layout box */
   .box-project {
     background-size: contain;
     background-repeat: no-repeat;
@@ -35,4 +37,5 @@ export default {
       }
     }
   }
+/* /layout box */
 </style>
