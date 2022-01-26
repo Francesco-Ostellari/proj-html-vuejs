@@ -147,7 +147,13 @@
               </li>
             </ul>
             <div class="container-box d-flex flex-wrap justify-content-center">
-              <div class="box-project mt-4 mb-4">
+              <Box
+                v-for="(box, index) in boxes"
+                :key="index"
+                :img="box.box"
+                :titolo="box.name"
+              />
+              <!-- <div class="box-project mt-4 mb-4">
                 <div class="bg-trasparenza">
                   <div class="name-project">
                     Academic professional program in social media
@@ -188,7 +194,7 @@
                     Confraternization of the procurement team
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -365,8 +371,42 @@
 </template>
 
 <script>
+import Box from './Box.vue'
 export default {
-
+  name: 'Main',
+  components: {
+    Box,
+  },
+  data() {
+    return {
+      boxes: [
+        {
+          box: require('../assets/img/project-1.jpg'),
+          name: "Academic professional program in social media",
+        },
+        {
+          box: require('../assets/img/project-2.jpg'),
+          name: "President's speech at the annual meeting",
+        },
+        {
+          box: require('../assets/img/project-3.jpg'),
+          name: "International business trip in Shanghai",
+        },
+        {
+          box: require('../assets/img/project-4.jpg'),
+          name: "Technology workshop with education theme",
+        },
+        {
+          box: require('../assets/img/project-5.jpg'),
+          name: "Donation of clothes and food to the partner NGO",
+        },
+        {
+          box: require ('../assets/img/project-6.jpg'),
+          name: "Confraternization of the procurement team",
+        },   
+      ]
+    }
+  }
 }
 </script>
 
@@ -521,25 +561,25 @@ export default {
         padding: 5px;
       } 
     }
-    .box-project {
-      background-image: url('../assets/img/project-1.jpg');
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 400px;
-      height: 400px;
-      border-radius: 5px;
-      .bg-trasparenza {
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        .name-project {
-          color: #ffffff;
-          font-size: 1.8em;
-          padding: 260px 10px 0 10px;
-          font-weight: bold;
-        }
-      }
-    }
+    // .box-project {
+    //   background-image: url('../assets/img/project-1.jpg');
+    //   background-size: contain;
+    //   background-repeat: no-repeat;
+    //   width: 400px;
+    //   height: 400px;
+    //   border-radius: 5px;
+    //   .bg-trasparenza {
+    //     height: 100%;
+    //     width: 100%;
+    //     background-color: rgba(0, 0, 0, 0.5);
+    //     .name-project {
+    //       color: #ffffff;
+    //       font-size: 1.8em;
+    //       padding: 260px 10px 0 10px;
+    //       font-weight: bold;
+    //     }
+    //   }
+    // }
   }
   .fourth-section {
     text-align: center;
