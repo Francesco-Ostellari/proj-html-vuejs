@@ -1,6 +1,6 @@
 <template>
   <main>
-    <section class="first-section">
+    <section class="core-business">
       <div class="container">
         <div class="row">
           <div class="col d-flex justify-content-center">
@@ -11,7 +11,7 @@
                     <i class="fas fa-user-friends"></i>
                   </span>
                 </div>
-                <div class="container-text-first-section">
+                <div class="container-text-core-business">
                   <h1>
                     Human Capital
                   </h1>
@@ -28,7 +28,7 @@
                     <i class="fas fa-chart-pie"></i>
                   </span>
                 </div>
-                <div class="container-text-first-section">
+                <div class="container-text-core-business">
                   <h1>
                     Core business
                   </h1>
@@ -45,7 +45,7 @@
                     <i class="fas fa-tachometer-alt"></i>
                   </span>
                 </div>
-                <div class="container-text-first-section">
+                <div class="container-text-core-business">
                   <h1>
                     Performance
                   </h1>
@@ -57,10 +57,88 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col col-pallini d-flex">
+            <div class="container-rettangolo-pallini">
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="second-section">
-      <div class="container text-second-section">
+    <section class="the-company">
+      <div class="container text-the-company">
         <div class="row">
           <div class="col-5">
             <div class="text">
@@ -106,9 +184,87 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col col-pallini d-flex">
+            <div class="container-rettangolo-pallini">
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+              <div class="pallino me-2">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="third-section">
+    <section class="actions-projects">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -153,54 +309,12 @@
                 :img="box.box"
                 :titolo="box.name"
               />
-              <!-- <div class="box-project mt-4 mb-4">
-                <div class="bg-trasparenza">
-                  <div class="name-project">
-                    Academic professional program in social media
-                  </div>
-                </div>
-              </div>
-              <div class="box-project mt-4 me-4 ms-4 mb-4">
-                <div class="bg-trasparenza">
-                  <div class="name-project">
-                    President's speech at the annual meeting
-                  </div>
-                </div>
-              </div>
-              <div class="box-project mt-4 mb-4">
-                <div class="bg-trasparenza">
-                  <div class="name-project">
-                    International business trip in Shanghai
-                  </div>
-                </div>
-              </div>
-              <div class="box-project">
-                <div class="bg-trasparenza">
-                  <div class="name-project">
-                    Technology workshop with education theme
-                  </div>
-                </div>
-              </div>
-              <div class="box-project me-4 ms-4">
-                <div class="bg-trasparenza">
-                  <div class="name-project">
-                    Donation of clothes and food to the partner NGO
-                  </div>
-                </div>
-              </div>
-              <div class="box-project">
-                <div class="bg-trasparenza">
-                  <div class="name-project">
-                    Confraternization of the procurement team
-                  </div>
-                </div>
-              </div> -->
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="fourth-section">
+    <section class="process-management">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -300,7 +414,7 @@
         </div>
       </div>
     </section>
-    <section class="fifth-section">
+    <section class="trusted-feedback">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -327,7 +441,7 @@
             <div class="mybox px-5">
               <div class="text">
                 <img src="../assets/img/logo-1.png" alt="">
-                <div class="container-text-first-section">
+                <div class="container-text-core-business">
                   <p class="paragraph">
                     Praesent volutpat justo sit amet elementum malesuada. Praesent saggit augue justo, in accumsan orci rhoncus at pellentesque. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
@@ -340,7 +454,7 @@
             <div class="mybox px-5 me-4 ms-4">
               <div class="text">
                 <img src="../assets/img/logo-2.png" alt="">
-                <div class="container-text-first-section">
+                <div class="container-text-core-business">
                   <p class="paragraph">
                     Praesent volutpat justo sit amet elementum malesuada. Praesent saggit augue justo, in accumsan orci rhoncus at pellentesque. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
@@ -353,7 +467,7 @@
             <div class="mybox px-5">
               <div class="text">
                 <img src="../assets/img/logo-3.png" alt="">
-                <div class="container-text-first-section">
+                <div class="container-text-core-business">
                   <p class="paragraph">
                     Praesent volutpat justo sit amet elementum malesuada. Praesent saggit augue justo, in accumsan orci rhoncus at pellentesque. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
@@ -411,9 +525,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .first-section {
+// @import "../assets/scss/style.scss";
+  .core-business {
     background-color: #e4eae6;
-    padding: 100px 0;
+    padding: 150px 0;
     .mybox {
       height: 350px;
       width: 350px;
@@ -451,8 +566,27 @@ export default {
         }
       }
     }
+    .col-pallini {
+      position: relative;
+      justify-content: center;
+      .container-rettangolo-pallini {
+        width: 162px;
+        height: 80px;
+        position: absolute;
+        top: 115px;
+        display: flex;
+        flex-wrap: wrap;
+        .pallino {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #1a948f;
+          opacity: 0.3;
+        }
+      }
+    }
   }
-  .second-section{
+  .the-company{
     background-image: url('../assets/img/about-5.jpg');
     background-repeat: no-repeat;
     background-position: right;
@@ -520,8 +654,27 @@ export default {
         border: 1px solid #1a948f;
       }
     }
+    .col-pallini {
+      position: relative;
+      justify-content: center;
+      .container-rettangolo-pallini {
+        width: 162px;
+        height: 80px;
+        position: absolute;
+        top: -35px;
+        display: flex;
+        flex-wrap: wrap;
+        .pallino {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #1a948f;
+          opacity: 0.3;
+        }
+      }
+    }
   }
-  .third-section {
+  .actions-projects {
     background-color: #111117;
     text-align: center;
     padding: 150px 0;
@@ -561,27 +714,8 @@ export default {
         padding: 5px;
       } 
     }
-    // .box-project {
-    //   background-image: url('../assets/img/project-1.jpg');
-    //   background-size: contain;
-    //   background-repeat: no-repeat;
-    //   width: 400px;
-    //   height: 400px;
-    //   border-radius: 5px;
-    //   .bg-trasparenza {
-    //     height: 100%;
-    //     width: 100%;
-    //     background-color: rgba(0, 0, 0, 0.5);
-    //     .name-project {
-    //       color: #ffffff;
-    //       font-size: 1.8em;
-    //       padding: 260px 10px 0 10px;
-    //       font-weight: bold;
-    //     }
-    //   }
-    // }
   }
-  .fourth-section {
+  .process-management {
     text-align: center;
     padding: 100px 0;
     .subtitle {
@@ -661,7 +795,7 @@ export default {
       }
     }
   }
-  .fifth-section {
+  .trusted-feedback {
     background-color: #e4eae6;
     padding: 100px 0;
     text-align: center;
