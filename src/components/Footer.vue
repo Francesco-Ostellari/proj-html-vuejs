@@ -50,40 +50,17 @@
             <h3>
               Example Inc.
             </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p>
-              Praesent diam lacus dapibus sed imperdiet consecteur
+            <p v-for="(text, index) in texts" :key="index">
+              {{text.paragraph}}
             </p>
             <ul>
-              <li>
-                <a href="#">
+              <li v-for="(contact, index) in contacts" :key="index">
+                <a :href="contact.href">
                   <span class="round-icon">
-                    <i class="fas fa-phone-alt"></i>
+                    <i :class="contact.icon"></i>
                   </span>
                   <span>
-                    +1(305) 1234-5678
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="round-icon">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                  <span>
-                    hello@example.com
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="round-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                  </span>
-                  <span>
-                    Main Avenue, 987
+                    {{contact.text}}
                   </span>
                 </a>
               </li>
@@ -122,7 +99,36 @@
 
 <script>
 export default {
-
+  name: 'Footer',
+  data() {
+    return {
+      contacts: [
+        {
+          icon: 'fas fa-phone-alt',
+          text: '+1(305) 1234-5678',
+          href: '#'
+        },
+        {
+          icon: 'fas fa-envelope',
+          text: 'hello@example.com',
+          href: '#'
+        },
+        {
+          icon: 'fas fa-map-marker-alt',
+          text: 'Main Avenue, 987',
+          href: '#'
+        },
+      ],
+      texts: [
+        {
+          paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        },
+        {
+          paragraph: 'Praesent diam lacus dapibus sed imperdiet consecteur.'
+        }
+      ]
+    }
+  }
 }
 </script>
 
