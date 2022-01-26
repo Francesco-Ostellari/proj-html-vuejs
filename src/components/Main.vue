@@ -573,7 +573,7 @@ export default {
             font-size: 1.5em;
           }
         }
-        .container-text-first-section {
+        .container-text-core-business {
           h1 {
             font-weight: bold;
             color: #24343c;
