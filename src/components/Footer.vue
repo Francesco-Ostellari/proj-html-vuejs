@@ -1,5 +1,7 @@
 <template>
+  <!-- footer -->
   <footer>
+    <!-- footer-top -->
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -70,6 +72,9 @@
         </div>
       </div>
     </div>
+    <!-- /footer-top -->
+
+    <!-- footer-bottom -->
     <div class="footer-bottom">
       <div class="container">
         <div class="row pt-3 pb-3">
@@ -94,7 +99,9 @@
         </div>
       </div>
     </div>
+    <!-- /footer-bottom -->
   </footer>
+  <!-- /footer -->
 </template>
 
 <script>
